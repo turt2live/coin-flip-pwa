@@ -14,26 +14,18 @@
       * {
         font-size: 1.7rem;
       }
-      #container {
-        position: relative;
-        min-height: 100vh;
-        height: 100vh;
-      }
       #content {
-        padding-bottom: 2.5rem;
         text-align: center;
         padding-top: 2rem;
       }
-      footer {
+      small {
         text-align: center;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 2.5rem;
+        display: block;
       }
-      footer > small, a {
+      small, a {
         font-size: 0.9rem;
-        color: white;
+        color: #979797;
+        padding-bottom: 2rem;
       }
       button, input {
         padding: 0.7rem 1rem;
@@ -59,18 +51,14 @@
     </style>
   </head>
   <body>
-    <div id="container">
-      <div id="content">
-        <button onclick="subtractCoin()">-</button>
-        <input type="number" min="1" value="1" id="numCoins">
-        <button onclick="addCoin()">+</button>
-        <br />
-        <button onclick="flipCoins()" id="flipBtn">Flip</button>
-        <div id="results"></div>
-      </div>
-      <footer>
-        <small>icon from <a href="https://www.iconfinder.com/icons/5310117/coin_dollar_money_icon" rel="noopener" target="_blank">iconfinder</a> | open source on <a href="https://github.com/turt2live/coin-flip-pwa" rel="noopener" target="_blank">github</a></small>
-      </footer>
+    <div id="content">
+      <small>icon from <a href="https://www.iconfinder.com/icons/5310117/coin_dollar_money_icon" rel="noopener" target="_blank">iconfinder</a> | open source on <a href="https://github.com/turt2live/coin-flip-pwa" rel="noopener" target="_blank">github</a></small>
+      <button onclick="subtractCoin()">-</button>
+      <input type="number" min="1" value="1" id="numCoins">
+      <button onclick="addCoin()">+</button>
+      <br />
+      <button onclick="flipCoins()" id="flipBtn">Flip</button>
+      <div id="results"></div>
     </div>
     <script type="text/javascript">
       if ("serviceWorker" in navigator) {

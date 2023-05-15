@@ -1,0 +1,8 @@
+{
+  "name": "Coin Flip",
+  "start_url": "./index.html",
+  "display": "minimal-ui",
+  "icons": [
+    {"src": "icons/512.png", "type": "image/png", "sizes": "512x512"}
+  ]
+}

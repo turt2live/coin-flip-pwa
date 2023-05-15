@@ -1,0 +1,1 @@
+console.log("Service worker installed (required for PWA)");
